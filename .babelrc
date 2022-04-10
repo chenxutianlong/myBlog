@@ -1,0 +1,9 @@
+{
+	"presets": [ //预设置，包含以下两个loader
+		"@babel/env",
+		"@babel/preset-react"
+	],
+	"plugins": [
+		"@babel/transform-runtime" //运行时插件，应用于解析async等ES6语法
+	]
+}
