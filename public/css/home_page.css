@@ -1,26 +1,30 @@
-.header-container{
+.header-container {
     width: 100%;
     height: 0;
     z-index: 100;
     position: relative;
 }
-.header{
+
+.header {
     width: 100%;
     height: 105px;
     position: absolute;
     border-bottom: 1px solid #f3f3fa40;
 }
-.pc-header{
+
+.pc-header {
     max-width: 1400px;
     position: relative;
 }
-.nav{
+
+.nav {
     width: 800px;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
 }
-.nav-content{
+
+.nav-content {
     width: auto;
     padding: 0 30px;
     line-height: 105px;
@@ -29,47 +33,55 @@
     font-weight: 300;
     text-align: center;
 }
-.nav-content:hover{
-    background-color: rgba(0,0,0,0.3);
+
+.nav-content:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.nav-content:hover > ul{
+
+.nav-content:hover>ul {
     display: block;
 }
-.menu-2{
+
+.menu-2 {
     padding: 0 10px;
     display: none;
     position: absolute;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     margin-left: -30px;
 }
-.content-2{
+
+.content-2 {
     padding: 0 20px;
     border-bottom: 1px solid #f3f3fa40;
     height: 55px;
     line-height: 55px;
     font-size: 15px;
 }
-.logo{
-    position:absolute;
+
+.logo {
+    position: absolute;
     display: inline-block;
     left: 0;
     margin-top: 14px;
     width: 81px;
     height: 81px;
 }
+
 /* 头部样式 */
-.home-area{
+.home-area {
     width: 100%;
     height: 100vh;
     background-image: url('/public/img/03.jpg');
     position: relative;
 }
-.cover{
+
+.cover {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.home-content{
+
+.home-content {
     max-width: 1000px;
     position: absolute;
     height: auto;
@@ -79,19 +91,23 @@
     left: 0;
     right: 0;
 }
-.home-content-middle,.home-content-small{
+
+.home-content-middle,
+.home-content-small {
     font-size: 14px;
     line-height: 20px;
     width: 500px
 }
-.home-content-big{
+
+.home-content-big {
     font-size: 54px;
     font-weight: 600;
     line-height: 54px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
-.button-container{
+
+.button-container {
     width: 400px;
     display: flex;
     flex-flow: row wrap;
@@ -102,63 +118,74 @@
     left: 0;
     right: 0;
 }
-.homebtn{
+
+.homebtn {
     padding: 12px 45px;
-    background-color: rgba(255,255,255,0.2);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 16px;
     font-weight: 300;
     position: relative;
     overflow: hidden;
 }
-.homebtn:after{
+
+.homebtn:after {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 400px;
     height: 150px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     transform: rotate(45deg) translateX(-40%) translateY(120%);
     transition: all 0.3s ease-in-out;
 }
-.homebtn:hover{
+
+.homebtn:hover {
     color: white;
 }
-.homebtn:hover:after{
+
+.homebtn:hover:after {
     transform: rotate(45deg) translateX(-40%) translateY(35%);
 }
-.homebtn span{
+
+.homebtn span {
     position: relative;
     z-index: 1;
 }
-.myprods{
+
+/* 我的作品 */
+.myprods {
     height: 780px;
     margin-top: 80px;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
-.subtitle{
-    width: 800px;
+
+.subtitle {
+    width: 700px;
     height: auto;
     max-width: 800px;
 }
-.en-title{
+
+.en-title {
     font-size: 18px;
     color: #1f1f1f;
     line-height: 14px;
     font-weight: 500;
 }
-.ch-title{
+
+.ch-title {
     margin-top: 14px;
     font-size: 34px;
     color: #1f1f1f;
     line-height: 34px;
     font-weight: 600;
 }
-.workcontainer{
+
+.workcontainer {
     max-width: 1400px;
     margin-top: 20px;
     position: relative;
@@ -166,65 +193,76 @@
     flex-flow: row wrap;
     justify-content: center;
 }
-.works{
+
+.works {
     position: relative;
     width: 310px;
     height: 310px;
     margin: 20px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
 @keyframes myworks {
     0% {
         transform: translateY(50px);
         /* opacity: 0; */
     }
+
     100% {
         transform: translateY(0);
         /* opacity: 1; */
     }
 }
-.workImg{
+
+.workImg {
     position: relative;
     top: 10px;
     width: 290px;
     height: 170px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-.contentContainer{
+
+.contentContainer {
     margin-top: 32px;
     margin-left: 20px;
     width: 270px;
     text-align: left;
 }
-.work-content-1{
+
+.work-content-1 {
     color: #767676;
     font-size: 12px;
     line-height: 12px;
     margin-bottom: 18px;
 }
-.work-content-2{
+
+.work-content-2 {
     color: #1f1f1f;
     font-size: 22px;
     line-height: 22px;
     font-weight: 600;
     margin-bottom: 18px;
 }
-.work-content-3{
+
+.work-content-3 {
     color: #767676;
     font-size: 12px;
     line-height: 12px;
     font-weight: 800;
 }
-.main-business{
+
+/* 主营业务 */
+.main-business {
     margin-top: 80px;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
-.buscontainer{
+
+.buscontainer {
     margin-top: 40px;
     position: relative;
     max-width: 1320px;
@@ -233,61 +271,73 @@
     flex-flow: row wrap;
     justify-content: center;
 }
-.busbox{
+
+.busbox {
     position: relative;
     width: 330px;
     height: 240px;
     margin: 0;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-.bus-01{
+
+.bus-01 {
     background-color: #2f2f2f;
 }
-.bus-02{
+
+.bus-02 {
     background-color: #4f4f4f;
 }
-.bus-03{
+
+.bus-03 {
     background-color: #5f5f5f;
 }
-.bus-04{
+
+.bus-04 {
     background-color: #3f3f3f;
 }
-.busnum{
+
+.busnum {
     height: 240px;
     width: auto;
-    position:relative;
+    position: relative;
     color: white;
     margin: 0 14px;
     font-size: 70px;
     font-weight: 200;
     line-height: 240px;
 }
-.buscontent{
+
+.buscontent {
     height: 240px;
     width: auto;
-    position:relative;
+    position: relative;
     color: white;
     margin: 0 14px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
-.buscontent p{
+
+.buscontent p {
     font-weight: 200;
     margin: 8px 0;
 }
-.chcontent{
+
+.chcontent {
     font-size: 38px;
     line-height: 38px;
 }
-.engcontent{
+
+.engcontent {
     font-size: 18px;
     line-height: 18px;
 }
-.contactme{
+
+/* 联系我们 */
+.contactme {
     height: 700px;
     margin-top: 120px;
     position: relative;
@@ -296,12 +346,14 @@
     background-attachment: fixed;
     background-size: cover;
 }
-.call-container{
+
+.call-container {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
-.contactcon{
+
+.contactcon {
     text-align: center;
     font-size: 44px;
     line-height: 44px;
@@ -309,13 +361,15 @@
     color: white;
     position: relative;
 }
-.callMe{
+
+.callMe {
     position: relative;
     width: 50%;
     min-width: 600px;
     margin-top: 50px;
 }
-.callMe label{
+
+.callMe label {
     text-align: left;
     display: block;
     color: #2b98f0;
@@ -323,53 +377,62 @@
     font-size: 14px;
     font-weight: 500;
 }
-.requirebox{
+
+.requirebox {
     background-color: #fff;
     position: relative;
     text-align: center;
-    padding:20px 0 16px 0;
+    padding: 20px 0 16px 0;
     border-radius: 10px;
     margin: 0;
 }
-.require-select{
+
+.require-select {
     position: relative;
     display: inline-block;
     width: 200px;
     margin: 15px 40px;
 }
-.require-input{
+
+.require-input {
     position: relative;
     display: inline-block;
     width: 200px;
     margin: 15px 40px;
 }
-.requirebox select{
+
+.requirebox select {
     width: 100%;
     height: 20px;
     margin: 8px auto;
-	appearance:none;
-	-moz-appearance:none; /* Firefox */
-	-webkit-appearance:none; /* Safari and Chrome */
+    appearance: none;
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
     border: 0;
     outline: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    color:rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     font-weight: 500;
     background: url(../img/arrow.png) 96% 50% no-repeat;
 }
-.requirebox input{
+
+.requirebox input {
     width: 100%;
     height: 20px;
     margin: 8px auto;
     border: 0;
     outline: 0;
+    /*无框线*/
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    color:rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     font-weight: 500;
 }
-.submit{
+
+.submit {
     position: relative;
     display: block;
     width: 300px;
@@ -377,32 +440,441 @@
     margin: 30px auto 0 auto;
     background-color: #2b98f0;
     border: 0;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 16px;
     border-radius: 5px;
 }
-.submit:hover{
+
+.submit:hover {
     transform: translateZ(0) scale(1.05);
 }
-@media screen and (max-width: 1600px){
-    .require-select,.require-input{
+
+@media screen and (max-width: 1600px) {
+
+    .require-select,
+    .require-input {
         width: 400px;
     }
-    .requirebox input,.requirebox select{
+
+    .requirebox input,
+    .requirebox select {
         font-size: 20px;
         height: 30px;
     }
-    label{
+
+    label {
         font-size: 20px !important;
     }
-    .submit{
+
+    .submit {
         font-size: 20px;
     }
-    .require-select:before{
+
+    .require-select:before {
         bottom: 23%;
     }
 }
-.kuaiqu02{
-    height: 2000px;
+
+/* 其他业务 */
+.otherbusiness {
+    margin-top: 80px;
     position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.oblayout {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.obcontainer {
+    width: 320px;
+    height: 340px;
+    margin: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.ob-img-style {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    display: block;
+}
+
+.ob-content-style {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.ob-subtitle-style {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    color: #1f1f1f;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.ob-text-style {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #767676;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.ob-button-style {
+    position: relative;
+    display: inline-block;
+    bottom: 50px;
+    margin: 0 auto;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 客户评价 */
+.usercomment {
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.userlayout {
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.usercontainer {
+    width: 550px;
+    height: 150px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+}
+
+.user-headphoto {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #0152a3;
+}
+
+.username {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #0152a3;
+    text-align: left;
+    width: auto;
+    margin-top: 36px;
+    left: 160px;
+}
+
+.commentclock {
+    position: absolute;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    color: #0152a3;
+    text-align: right;
+    width: auto;
+    margin-top: 42px;
+    right: 70px;
+}
+
+.usercontent {
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f1f1f;
+    text-align: left;
+    width: 350px;
+    margin-top: 80px;
+    left: 160px;
+}
+
+.point {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pointimg {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10px;
+    height: 10px;
+}
+
+.pointimg-1 {
+    background-color: #0152a3;
+}
+
+.pointimg-2,
+.pointimg-3 {
+    background-color: #A8A8A8
+}
+
+/* 次底布局 */
+.bottom-layout {
+    height: 444px;
+    background-color: #073868;
+    margin-top: 100px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.comForm {
+    width: 650px;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.inputlabel {
+    color: #fff;
+    font-size: 30px !important;
+    line-height: 30px !important;
+    font-weight: 600;
+    position: relative;
+    display: block;
+}
+
+.input-container {
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 6px;
+    border: 2px solid #1f1f1f;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    width: 650px;
+    text-align: left;
+}
+
+.input-container input {
+    height: 50px;
+    outline: 0;
+    border: none;
+    position: absolute;
+    display: inline-block;
+}
+
+.text-input {
+    width: 500px;
+    padding-left: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 18px;
+}
+
+.com-submit {
+    width: 150px;
+    margin-left: 500px;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 20px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.foot-container {
+    position: relative;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.foot-jump-container {
+    padding: 0 20px;
+    border-right: 1px solid #f3f3fa40;
+    width: 640px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.foot-call-container {
+    padding: 0 20px;
+    width: 580px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.jump-content {
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+.jump-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    color: white;
+    position: absolute;
+}
+
+.jump-text-container {
+    position: absolute;
+    margin-top: 40px;
+}
+
+.jump-link {
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
+    display: block;
+}
+
+.jump-link:hover {
+    color: yellow;
+}
+
+.relation {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.weibo-wechat {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.relation-text {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    width: 200px;
+    left: 0;
+}
+
+.server,
+.complain {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.phone-number-01,
+.phone-number-02 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.phone-number-01 {
+    margin-top: 50px;
+}
+
+.complain {
+    margin-top: 100px;
+}
+
+.phone-number-02 {
+    margin-top: 150px;
+}
+
+.offcial-site {
+    font-size: 24px;
+    line-height: 50px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 250px;
+    text-align: center;
+}
+
+.offcial-qrcode {
+    margin-top: 60px;
+    position: absolute;
+    width: 100%;
+    height: 115px;
+}
+
+.offcial-weibo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 115px;
+    height: 115px;
+}
+
+.offcial-wechat {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 115px;
+    height: 115px;
+}
+
+@media screen and (max-width: 1200px) {
+    .foot-jump-container {
+        display: none;
+    }
+}
+
+/* 底部样式 */
+.footer {
+    height: 70px;
+    background-color: #073059;
+    position: relative;
+    text-align: center;
+}
+
+.foot-nav {
+    position: relative;
+    top: 50%;
+    width: 700px;
+    transform: translateY(-50%);
+}
+
+.footer-content {
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.footer-content:hover {
+    color: #fff;
 }

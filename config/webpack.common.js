@@ -13,13 +13,13 @@ module.exports = {
 		publicPath: '/dist/' //指定HTML引用文件的前缀，因为是服务端，所以/代表请求路径，后面的dist就是文件夹，就可以了
 	},
 
-	plugins: [
-		new htmlWp({ //实例化html-webpack-plugin插件，传入对象
-			template: './modules/modules01.html',//定义模板的路径
-			filename: '../views/test01.html',//定义生成的html的文件名及路径
-			inject: 'body' //将script放在body中
-		})
-	],
+	// plugins: [
+	// 	new htmlWp({ //实例化html-webpack-plugin插件，传入对象
+	// 		template: './modules/modules01.html',//定义模板的路径
+	// 		filename: '../views/test01.html',//定义生成的html的文件名及路径
+	// 		inject: 'body' //将script放在body中
+	// 	})
+	// ],
 
 	module: {
 		rules: [
