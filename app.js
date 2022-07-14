@@ -1,14 +1,36 @@
-const opn = require('opn')
-const express = require('express')
+const express = require('express');
+//引入express模块
+const opn = require('opn');
+const fs = require('fs');
+const path = require('path');
+//引入核心模块
+const homeRouter = require('./router/homeRouter')
+//引入自定义文件
 
 const app = express()
+
+app.use((req, res, next) => {
+	const fedReg = new RegExp(/^\/fed/, 'i')
+	const fedUrl = req.url
+
+	if (fedUrl.search(fedReg) > -1) {
+
+		return fs.readFile(path.resolve(__dirname, './views/fed.html'), (err, data) => {
+			//如果不return，会先执行next然后报错
+			if (err) {
+				return res.send('读取错误')
+			}
+			res.end(data)
+		})
+	}
+
+	next();
+})
 
 app.use(express.static(__dirname))
 app.engine('html', require('express-art-template'));
 
-app.get('/', (req, res) => {
-	res.render('test01.html')
-})
+app.use(homeRouter)
 
 app.listen('1027', () => {
 	opn('http://localhost:1027/')

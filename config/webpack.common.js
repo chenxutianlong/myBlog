@@ -3,8 +3,8 @@ const htmlWp = require('html-webpack-plugin')
 
 module.exports = {
 	entry: { //设为对象可以使[name]获取到名字，便于output定义文件名
-		mainReact: './src/conponent01/index.jsx',
-		otherReact: './src/conponent02/index.jsx'
+		mainReact: './src/index.js',
+		// otherReact: './src/conponent02/index.jsx'
 	},
 
 	output: {
