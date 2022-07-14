@@ -27,10 +27,10 @@ app.use((req, res, next) => {
 	next();
 })
 
-app.use(express.static(__dirname))
+app.use(express.static(__dirname))//静态文件中间件
 app.engine('html', require('express-art-template'));
 
-app.use(homeRouter)
+app.use(homeRouter)//引入主页路由
 
 app.listen('1027', () => {
 	opn('http://localhost:1027/')
