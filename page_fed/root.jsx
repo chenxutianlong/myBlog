@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import { Link, Route, BrowserRouter, Switch, Redirect, HashRouter } from 'react-router-dom'
-import Home from './Home/Home.jsx'
-import Mynote from './MyNote/Mynote.jsx'
+import { Link, Route, BrowserRouter, Switch, Redirect } from 'react-router-dom'
+import Home from './Home/home.jsx'
+import Mynote from './Note/note.jsx'
 
 class Root extends React.Component {
 
@@ -10,11 +10,9 @@ class Root extends React.Component {
         return (
             <div>
                 <BrowserRouter>
-                    {/* <Link className='rootLink' to='/fed/home'>点击去Home</Link>
-                    <Link className='rootLink' to='/fed/mynote'>点击去Mynote</Link> */}
                     <Switch>
                         <Route path='/fed/home' component={Home}></Route>
-                        <Route path='/fed/mynote' component={Mynote}></Route>
+                        <Route path='/fed/note' component={Mynote}></Route>
                         <Redirect to='/fed/home'></Redirect>
                     </Switch>
                 </BrowserRouter>

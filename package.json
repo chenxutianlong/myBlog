@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "art-template": "^4.13.2",
+    "axios": "^0.27.2",
     "express": "^4.17.2",
     "express-art-template": "^1.0.1",
     "react": "^17.0.2",
