@@ -5,9 +5,12 @@ const fs = require('fs');
 const path = require('path');
 //引入核心模块
 const homeRouter = require('./router/homeRouter')
+const noteRouter = require('./router/noteRouter')
 //引入自定义文件
 
 const app = express()
+
+app.engine('html', require('express-art-template'));//配置模板引擎
 
 app.use((req, res, next) => {
 	const fedReg = new RegExp(/^\/fed/, 'i')
@@ -26,11 +29,12 @@ app.use((req, res, next) => {
 
 	next();
 })
-
 app.use(express.static(__dirname))//静态文件中间件
-app.engine('html', require('express-art-template'));
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
 app.use(homeRouter)//引入主页路由
+app.use(noteRouter)//引入note路由
 
 app.listen('1027', () => {
 	opn('http://localhost:1027/')
